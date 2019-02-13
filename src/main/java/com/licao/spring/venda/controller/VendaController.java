@@ -1,9 +1,6 @@
 package com.licao.spring.venda.controller;
 
-import java.math.BigDecimal;
 import java.net.URI;
-import java.util.ArrayList;
-import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -14,8 +11,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.licao.spring.Entidades.models.Item;
-import com.licao.spring.Entidades.models.Produto;
 import com.licao.spring.Entidades.models.Venda;
 import com.licao.spring.venda.service.VendaService;
 
@@ -51,6 +46,4 @@ public class VendaController {
 		return ResponseEntity.status(HttpStatus.OK).body(vendas);
 		
 	}
-	
-	
 }
